@@ -1,0 +1,52 @@
+/* style.css */
+:root {
+    --primary-color: #4A90E2;
+    --bg-color: #f4f7f6;
+    --card-bg: #ffffff;
+    --text-color: #333;
+}
+
+body {
+    font-family: 'Phetsarath OT', sans-serif; /* ຟອນລາວ */
+    background-color: var(--bg-color);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.menu-container {
+    width: 90%;
+    max-width: 600px;
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.grid-menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); /* ຮອງຮັບທຸກຂະໜາດຈໍ */
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.menu-item {
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 12px;
+    transition: transform 0.2s, background 0.2s;
+    border: 1px solid #eee;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+    background: var(--primary-color);
+    color: white;
+}
+
+.menu-item span { font-size: 2rem; display: block; margin-bottom: 10px; }
